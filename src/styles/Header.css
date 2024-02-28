@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.header-up {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
+  background-color: #211d1d;
+  color: white;
+}
+
+.header-link {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 1.2rem;
+}
+
+.header-link:any-link {
+  color: azure;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #dcdcdc;
+  transition: 0.5s all;
+  transition-property: color transform;
+  transform: scale(0.95);
+}
+
+/* .icon-heart {
+  height: 40px;
+} */
+
+.header-bot {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  border-bottom: 2px solid black;
+}
+
+.container {
+  display: contents;
+}
+
+.header-bot-logo {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  height: 43px;
+  margin-left: 150px;
+}
+
+/* .header-bot-list { */
+/* flex-direction: column-reverse; */
+/* display: flex; */
+/* } */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.nav-list li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-list li a:hover {
+  color: #ba55d3;
+  text-shadow: #ba55d3 1px 0 10px;
+  border-bottom: 2px solid purple;
+}
+
+.header-bot-tel {
+  display: contents;
+  flex-direction: column;
+  margin-left: 150px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-recall {
+  font-size: 0.9rem;
+}
+.header-bot-tel a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-bot-tel a:hover {
+  color: #8a2be2;
+}
+
+.header-list-tel a {
+  display: block;
+}
+
+.header-svg-telephone {
+  margin-left: 100px;
+  height: 40px;
+}
+
+.header-bot-bucket {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+  margin-left: 150px;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 24px;
+}
+
+.header-bot-bucket a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 2px;
+}
+
+.header-bot-bucket a:hover {
+  color: #8a2be2;
+}
+
+.icon-bucket {
+  height: 34px;
+  cursor: pointer;
+}
