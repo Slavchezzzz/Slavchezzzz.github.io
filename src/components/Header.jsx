@@ -1,4 +1,5 @@
 import "../styles/Header.css";
+import { Link } from "react-router-dom";
 
 export default function Hader() {
   return (
@@ -31,6 +32,9 @@ export default function Hader() {
             </svg>
             <div className="header-bot-list">
               <ul class="nav-list">
+                <li>
+                  <Link to="/test">Home</Link>
+                </li>
                 <li>
                   <a href="">Граффити</a>
                 </li>

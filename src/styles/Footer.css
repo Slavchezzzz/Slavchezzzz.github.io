@@ -1,0 +1,38 @@
+.main-footer {
+  /* display: flex; */
+  background-color: #211d1d;
+  color: aliceblue;
+  flex-shrink: 0;
+  height: 300px;
+}
+
+.footer {
+  /* text-align: center; */
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  /* margin: 0; */
+}
+
+.footer-info {
+  margin-left: 100px;
+}
+
+.footer-list {
+  padding: 0;
+}
+
+.footer-list li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.footer-list li a {
+  margin: 0;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer-list li a:hover {
+  color: #c4c0c0;
+}
