@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Jolly";
+  src: url(../assets/Jolly_Lodger/JollyLodger-Regular.ttf);
+}
+
+.Card-info {
+  padding: 20px;
+  /* background-color: rebeccapurple; */
+  color: aliceblue;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.Card-info h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Jolly";
+  font-size: 55px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.card-item {
+  align-items: center;
+  margin-left: 50px;
+  padding: 25px;
+  width: 200px;
+  height: 350px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  /* cursor: pointer; */
+}
+
+.card-item a {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.2rem;
+  border: 1px solid #3e018c;
+  border-radius: 10px;
+  background-color: #3e018c;
+  padding: 6px;
+}
+
+.Card-pos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart-icon {
+  cursor: pointer;
+  /* border: 1px solid black;
+  padding: 3px; */
+}
+
+.card-item a:hover {
+  background-color: #7502ab;
+  /* color: #7502ab; */
+}
+
+.card-item:hover {
+  box-shadow: 0px 0px 15px black;
+}
