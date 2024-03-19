@@ -5,10 +5,10 @@
 
 .Card-info {
   padding: 20px;
-  /* background-color: rebeccapurple; */
   color: aliceblue;
-  /* display: flex; */
   justify-content: center;
+  /* border-top: 1px solid black; */
+  box-shadow: 0px 0px 15px black;
 }
 
 .Card-info h1 {
@@ -35,7 +35,14 @@
   background-color: white;
   color: black;
   border-radius: 10px;
+  transition: transform 0.9s;
   /* cursor: pointer; */
+}
+
+.card-item:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .card-item a {
@@ -48,7 +55,7 @@
   border: 1px solid #3e018c;
   border-radius: 10px;
   background-color: #3e018c;
-  padding: 6px;
+  padding: 7px;
 }
 
 .Card-pos {

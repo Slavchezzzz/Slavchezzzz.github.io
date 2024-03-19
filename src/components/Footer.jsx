@@ -52,6 +52,19 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        <div className="footer-quest">
+          <h2>Быть в курсе последних новостей</h2>
+          <div className="footer-form">
+            <input
+              className="footer-input"
+              type="email"
+              placeholder=" Ваш email"
+            ></input>
+            <a href="#" className="footer-button">
+              Отправить
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

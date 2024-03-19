@@ -36,3 +36,54 @@
 .footer-list li a:hover {
   color: #c4c0c0;
 }
+
+.footer-quest {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+}
+.footer-quest h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form {
+  margin-top: 25px;
+  display: flex;
+  position: absolute;
+}
+
+.footer-input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.footer-button {
+  text-decoration: none;
+  /* padding: 15px; */
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #6e02a1;
+  border: 1px solid #6e02a1;
+  border-radius: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.footer-button:hover {
+  background-color: #9200d6;
+  border: 1px solid #9200d6;
+}
