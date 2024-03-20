@@ -18,19 +18,19 @@ const Slider = () => {
   return (
     <Carousel afterChange={onChange}>
       <div className="slide-img">
-        <img src="../slide1-1.jpg" style={contentStyle} alt="slide"></img>
+        <img src="./slide/slide1-1.jpg" style={contentStyle} alt="slide"></img>
       </div>
       <div className="slide-img">
-        <img src="../slide2.jpg" style={contentStyle} alt="slide"></img>
+        <img src="./slide/slide2.jpg" style={contentStyle} alt="slide"></img>
       </div>
       <div className="slide-img">
-        <img src="../slide3.jpg" style={contentStyle} alt="slide"></img>
+        <img src="./slide/slide3.jpg" style={contentStyle} alt="slide"></img>
       </div>
       <div className="slide-img">
-        <img src="../slide4.jpg" style={contentStyle} alt="slide"></img>
+        <img src="./slide/slide4.jpg" style={contentStyle} alt="slide"></img>
       </div>
       <div className="slide-img">
-        <img src="../slide5.jpg" style={contentStyle} alt="slide"></img>
+        <img src="./slide/slide5.jpg" style={contentStyle} alt="slide"></img>
       </div>
     </Carousel>
   );
