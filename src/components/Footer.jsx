@@ -61,7 +61,7 @@ export default function Footer() {
               placeholder=" Ваш email"
             ></input>
             <a href="#" className="footer-button">
-              Отправить
+              Подписаться
             </a>
           </div>
         </div>

@@ -11,11 +11,17 @@
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
+  padding: 25px;
+  /* margin-top: 25px; */
   /* margin: 0; */
 }
 
 .footer-info {
   margin-left: 100px;
+}
+
+.footer-info h2 {
+  margin-bottom: 10px;
 }
 
 .footer-list {
@@ -47,6 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-bottom: 10px; */
 }
 
 .footer-form {

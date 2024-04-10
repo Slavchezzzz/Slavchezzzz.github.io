@@ -1,5 +1,5 @@
 import "../styles/Card.css";
-import { dataCard } from "./dataCardPopular";
+import { dataCard } from "./data/dataCardPopular";
 export default function CardPopular() {
   return (
     <div className="Card-info">
