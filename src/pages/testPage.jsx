@@ -6,13 +6,5 @@ import MainCard from "../components/MainCard.jsx";
 
 // import Slider from "../components/Slider.jsx";
 export default function TestPage() {
-  return (
-    <div className="main-page">
-      <Header></Header>
-      <div className="main-card-page">
-        <MainCard></MainCard>
-      </div>
-      <Footer></Footer>
-    </div>
-  );
+  return <div className="main-page"></div>;
 }

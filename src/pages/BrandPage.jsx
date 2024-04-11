@@ -4,27 +4,5 @@ import { BrandsData } from "../components/data/BrandsData.jsx";
 import "../styles/BrandsPage.css";
 
 export default function BrandPage() {
-  return (
-    <div className="main-brand">
-      <Header></Header>
-      <div className="Brands-container">
-        <div className="Brands-menu">
-          {BrandsData.map((BrandsData, index) => {
-            return (
-              <div className="Brands-item" key={index}>
-                <div className="Brand-image">
-                  <img src={BrandsData.img}/>
-                </div>
-                <div className="Brand-discription">
-                  <h1>{BrandsData.name}</h1>
-                  <span>{BrandsData.discription}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <Footer></Footer>
-    </div>
-  );
+  return <div className="main-brand"></div>;
 }
