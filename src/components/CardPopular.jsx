@@ -1,29 +1,53 @@
 import "../styles/Card.css";
 import { dataCard } from "./data/dataCardPopular";
-export default function CardPopular() {
+
+import { useContext } from "react";
+import { CartContext } from "./data/CartContext.js";
+import { FaHeart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { emplayss } from "./data/data.jsx";
+
+export default function CardMin() {
   return (
     <div className="Card-info">
-      <h1>Popular</h1>
-      <div className="card">
+      <div className="card-menu">
         {dataCard.map((dataCard, index) => {
-          return (
-            <div className="card-item" key={index}>
-              <img src={dataCard.img} width={200}></img>
-              <span>Аэрозольная краска {dataCard.name} </span>
-              <span>{dataCard.ml} мл</span>
-              <h2>{dataCard.price}</h2>
-              <div className="Card-pos">
-                <a href="#">Подробнее</a>
-                <img
-                  src="../heart.svg"
-                  className="heart-icon"
-                  href="#"
-                  width={35}
-                ></img>
-              </div>
-            </div>
-          );
+          return <Card dataCard={dataCard} key={index} />;
         })}
+      </div>
+    </div>
+  );
+}
+
+export function Card({ dataCard }) {
+  const { cart, setCart } = useContext(CartContext);
+
+  let bucket = "bucket-icon";
+  if (cart[dataCard.id] != undefined) {
+    bucket += " active";
+  }
+
+  function handleClick() {
+    if (cart[dataCard.id] != undefined) {
+      delete cart[dataCard.id];
+    } else {
+      cart[dataCard.id] = dataCard;
+    }
+    setCart(structuredClone(cart));
+    console.log(cart);
+  }
+  return (
+    <div className="card-item">
+      <img src={dataCard.img} width={200}></img>
+      <div className="card-description">
+        <span>Аэразольная краска{dataCard.name} </span>
+        <span>{dataCard.ml} мл</span>
+        <h2>{dataCard.price}$</h2>
+      </div>
+      <div className="Card-pos">
+        <a href="/product">Подробнее</a>
+        <FaShoppingCart className={bucket} onClick={handleClick} />
+        <FaHeart className="heart-icon" />
       </div>
     </div>
   );

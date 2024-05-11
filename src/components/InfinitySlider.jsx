@@ -15,7 +15,7 @@ export default function InfinitySlider() {
   return (
     <>
       <div className="Brands-info">
-        <h1>Brands</h1>
+        <h1>Бренды</h1>
       </div>
       <Swiper
         slidesPerView={4}
@@ -45,6 +45,12 @@ export default function InfinitySlider() {
         </SwiperSlide>
         <SwiperSlide>
           <img src="./Brands/photo3.png"></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./Brands/photo7.png"></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./Brands/photo8.png"></img>
         </SwiperSlide>
       </Swiper>
     </>

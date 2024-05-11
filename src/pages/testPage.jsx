@@ -6,5 +6,19 @@ import MainCard from "../components/MainCard.jsx";
 
 // import Slider from "../components/Slider.jsx";
 export default function TestPage() {
-  return <div className="main-page"></div>;
+  return (
+    <div className="layout">
+      <Header />
+      <div className="path-cont">
+        <a href="/" className="path-des">
+          GraffsShop
+        </a>
+        <a>Каталог</a>
+      </div>
+      <div className="Page">
+        <MainCard />
+      </div>
+      <Footer />
+    </div>
+  );
 }

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Jolly";
+  src: url(../assets/Jolly_Lodger/JollyLodger-Regular.ttf);
+}
+
 #root {
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
   /* text-align: center; */
 }
 
@@ -11,4 +17,16 @@
 
 .Page {
   flex-grow: 1;
+}
+
+.Page h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 35px;
+}
+
+.page-card {
+  padding-top: 25px;
 }

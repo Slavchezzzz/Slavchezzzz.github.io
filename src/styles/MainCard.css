@@ -1,53 +1,41 @@
 .Card-info {
-  padding: 20px;
   color: aliceblue;
   justify-content: center;
-  /* border-top: 1px solid black; */
-  /* box-shadow: 0px 0px 15px black; */
   padding-bottom: 50px;
-  margin-top: 25px;
 }
-
-/* .Card-info h1 {
-  color: black;
-  display: flex;
-  justify-content: center;
-  font-family: "Jolly";
-  font-size: 55px;
-} */
 
 .card-menu {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 225px);
+  border: none;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   max-width: 1500px;
   justify-content: center;
+  align-items: center;
   justify-items: center;
   column-gap: 45px;
   row-gap: 45px;
   margin: 0 auto;
+  padding-top: 10px;
+  /* padding: 50px 0 50px; */
 }
 
 .card-item-main {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  margin-left: 50px;
-  padding: 25px;
   width: 200px;
-  height: 350px;
+  /* height: 350px; */
   background-color: white;
   color: black;
-  border-radius: 10px;
-  transition: transform 0.5s, box-shadow 0.9s;
+  transition: transform 0.5s;
+  box-shadow: 0px 0px 15px white;
+  cursor: pointer;
 }
 
 .card-item-main:hover {
-  -ms-transform: scale(1.8);
-  -webkit-transform: scale(1.9);
-  transform: scale(1.1);
-  /* box-shadow: 0px 0px 15px black; */
-  cursor: pointer;
+  -ms-transform: scale(1.1);
+  /* -webkit-transform: scale(1.1); */
+  transform: scale(1.05);
 }
 
 .card-item-main a {
@@ -57,23 +45,68 @@
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  border: 1px solid #3e018c;
+  border: 1px solid #a800e5;
   border-radius: 10px;
-  background-color: #3e018c;
+  background-color: #a800e5;
   padding: 7px 14px;
+  transition: 300ms ease;
 }
 
 .Card-pos {
   display: flex;
   justify-content: space-between;
-  margin-top: auto;
-  
+  align-items: center;
+  /* margin-top: auto; */
 }
 
 .heart-icon {
-  cursor: pointer;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  transition: 300ms ease;
+}
+
+.heart-icon:hover {
+  color: #7502ab;
+}
+
+.bucket-icon {
+  width: 24px;
+  height: 24px;
+  transition: 300ms ease;
+}
+
+.bucket-icon:hover,
+.bucket-icon.active {
+  color: #7502ab;
 }
 
 .card-item-main a:hover {
   background-color: #7502ab;
+}
+
+.old h3 {
+  text-decoration: line-through;
+}
+
+.new h2 {
+  color: #ad0000;
+}
+
+@media screen and (max-width: 900px) {
+  .card-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

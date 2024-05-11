@@ -17,9 +17,7 @@
   position: relative;
   flex-direction: column;
   padding: 30px;
-  max-width: 430px;
   width: 400px;
-  height: 480px;
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
@@ -33,7 +31,7 @@
   padding: 30px;
   max-width: 430px;
   width: 400px;
-  height: 400px;
+  /* height: 420px; */
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
@@ -67,7 +65,7 @@
 .input-faild input {
   position: absolute;
   height: 100%;
-  width: 82%;
+  width: 100%;
   padding: 0 35px;
   border: none;
   outline: none;
@@ -78,6 +76,14 @@
 
 .input-faild input:focus {
   border-bottom-color: #aa00e8;
+}
+
+.input-faild .input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 15px;
 }
 
 .checkbox-text {
@@ -92,7 +98,7 @@
 }
 
 .log-button {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -118,7 +124,7 @@
 
 .login-signup {
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .login-signup button {

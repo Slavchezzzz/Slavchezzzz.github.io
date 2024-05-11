@@ -37,4 +37,23 @@ export const BrandsData = [
     discription: "Товары для граффити под брендом Molotow",
     img: "./Brands/photo3.png",
   },
+  {
+    id: 7,
+    name: "Flux",
+    discription: "Заправки, маркер, а также стикеры под брендом Flux",
+    img: "./Brands/photo7.png",
+  },
+  {
+    id: 8,
+    name: "Easy",
+    discription:
+      "Аэрозольная краска Easy. Новинка на рынке аэрозольной продукции",
+    img: "./Brands/photo8.png",
+  },
+  {
+    id: 6,
+    name: "Molotow",
+    discription: "Товары для граффити под брендом Molotow",
+    img: "./Brands/photo3.png",
+  },
 ];

@@ -1,4 +1,15 @@
-.main-page {
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+.layout {
   display: flex;
   flex-direction: column;
+}
+
+.Page {
+  flex-grow: 1;
 }

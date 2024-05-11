@@ -1,17 +1,20 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 .Brands-info {
+  /* background-color: #bb99c4; */
+  /* border-top: 1px solid black; */
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .Brands-info h1 {
-  font-family: "Jolly";
-  font-size: 55px;
+  font-family: "Roboto";
+  font-size: 35px;
 }
 
 .swiper {
