@@ -26,6 +26,21 @@ export function Card({ NewProductData }) {
     bucket += " active";
   }
 
+  let heart = "heart-icon";
+  if (cart[NewProductData.id] != undefined) {
+    heart += " active-1";
+  }
+
+  function heartClick() {
+    if (cart[NewProductData.id] != undefined) {
+      delete cart[NewProductData.id];
+    } else {
+      cart[NewProductData.id] = NewProductData;
+    }
+    setCart(structuredClone(cart));
+    console.log(cart);
+  }
+
   function handleClick() {
     if (cart[NewProductData.id] != undefined) {
       delete cart[NewProductData.id];
@@ -47,7 +62,7 @@ export function Card({ NewProductData }) {
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>
         <FaShoppingCart className={bucket} onClick={handleClick} />
-        <FaHeart className="heart-icon" />
+        <FaHeart className={heart} onClick={heartClick} />
       </div>
     </div>
   );

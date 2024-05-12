@@ -26,6 +26,11 @@ export function Card({ MarkerData }) {
     bucket += " active";
   }
 
+  let heart = "heart-icon";
+  if (cart[MarkerData.id] != undefined) {
+    heart += " active-1";
+  }
+
   function handleClick() {
     if (cart[MarkerData.id] != undefined) {
       delete cart[MarkerData.id];
@@ -35,6 +40,17 @@ export function Card({ MarkerData }) {
     setCart(structuredClone(cart));
     console.log(cart);
   }
+
+  function heartClick() {
+    if (cart[MarkerData.id] != undefined) {
+      delete cart[MarkerData.id];
+    } else {
+      cart[MarkerData.id] = MarkerData;
+    }
+    setCart(structuredClone(cart));
+    console.log(cart);
+  }
+
   return (
     <div className="card-item-main">
       <img src={MarkerData.img} width={200}></img>
@@ -46,7 +62,7 @@ export function Card({ MarkerData }) {
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>
         <FaShoppingCart className={bucket} onClick={handleClick} />
-        <FaHeart className="heart-icon" />
+        <FaHeart className={heart} onClick={heartClick} />
       </div>
     </div>
   );
