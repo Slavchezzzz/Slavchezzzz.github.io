@@ -58,24 +58,17 @@ function SideBar({ className, onClickClose }) {
   return (
     <ul class={"menu-links" + (className ? " " + className : "")}>
       <FiX className="header-fix js-burger-close" onClick={onClickClose} />
-      <li>
-        <a href="/test">Граффити</a>
-      </li>
-      <li>
-        <a href="/Marker">Маркеры</a>
-      </li>
-      <li>
-        <a href="/accessories">Акссесуары</a>
-      </li>
-      <li>
-        <a href="/NewProduct">Новинки</a>
-      </li>
-      <li>
-        <a href="/SalePage">Скидки</a>
-      </li>
-      <li>
-        <a href="/Brand">Бренды</a>
-      </li>
+      <Link to={"/test"}>Граффити</Link>
+
+      <Link to={"/Marker"}>Маркеры</Link>
+
+      <Link to={"/accessories"}>Акссесуары</Link>
+
+      <Link to={"/NewProduct"}>Новинки</Link>
+
+      <Link to={"/SalePage"}>Скидки</Link>
+
+      <Link to={"/Brand"}>Бренды</Link>
     </ul>
   );
 }

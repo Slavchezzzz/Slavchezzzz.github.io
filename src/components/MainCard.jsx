@@ -4,6 +4,7 @@ import { CartContext } from "./data/CartContext.js";
 import { MainDataCard } from "./data/MainDataCard.jsx";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function MainCard() {
   return (
@@ -59,7 +60,7 @@ export function Card({ MainDataCard }) {
         <h2>{MainDataCard.price}$</h2>
       </div>
       <div className="Card-pos">
-        <a href="/product">Подробнее</a>
+        <Link to={"/product"}>Подробнее</Link>
         <FaShoppingCart className={bucket} onClick={handleClick} />
         <FaHeart className={heart} onClick={heartClick} />
       </div>
