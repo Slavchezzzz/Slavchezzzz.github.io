@@ -44,7 +44,7 @@ export function Card({ NewProductData }) {
         <h2>{NewProductData.price}$</h2>
       </div>
       <div className="Card-pos">
-        <a href="/product">Подробнее</a>
+        <Link to={"/product"}>Подробнее</Link>
         <FaShoppingCart className={bucket} onClick={handleClick} />
         <FaHeart className="heart-icon" />
       </div>
