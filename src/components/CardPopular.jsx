@@ -1,5 +1,6 @@
 import "../styles/Card.css";
 import { dataCard } from "./data/dataCardPopular";
+import { Link } from "react-router-dom";
 
 import { useContext } from "react";
 import { CartContext } from "./data/CartContext.js";

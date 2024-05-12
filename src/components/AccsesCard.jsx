@@ -4,6 +4,7 @@ import "../styles/MainCard.css";
 import { CartContext } from "./data/CartContext.js";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function AccsesCard() {
   return (

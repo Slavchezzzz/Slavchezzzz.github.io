@@ -4,6 +4,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { useContext } from "react";
 import { CartContext } from "./data/CartContext.js";
+import { Link } from "react-router-dom";
 
 export default function MarkerCard() {
   return (

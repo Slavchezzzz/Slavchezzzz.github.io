@@ -5,6 +5,7 @@ import { CartContext } from "./data/CartContext.js";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { emplayss } from "./data/data.jsx";
+import { Link } from "react-router-dom";
 
 export default function CardMin() {
   return (

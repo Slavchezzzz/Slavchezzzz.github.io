@@ -5,6 +5,7 @@ import { CartContext } from "./data/CartContext.js";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { SaleData } from "./data/SaleData.jsx";
+import { Link } from "react-router-dom";
 
 export default function Sale() {
   return (
@@ -50,7 +51,7 @@ export function Card({ SaleData }) {
         </div>
       </div>
       <div className="Card-pos">
-        <a href="/product">Подробнее</a>
+        <Link to={"/product"}>Подробнее</Link>s
         <FaShoppingCart className={bucket} onClick={handleClick} />
         <FaHeart className="heart-icon" />
       </div>
