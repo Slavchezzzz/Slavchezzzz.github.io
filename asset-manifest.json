@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd564c54.css",
+    "main.js": "/static/js/main.77fd2a32.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/slide10.png": "/static/media/slide10.bc34ead17d68bb3ea6d4.png",
+    "static/media/graffiti.jpg": "/static/media/graffiti.72337a5bd7926ad4ae69.jpg",
+    "static/media/JollyLodger-Regular.ttf": "/static/media/JollyLodger-Regular.d9785c8c959eadc4b582.ttf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.dd564c54.css.map": "/static/css/main.dd564c54.css.map",
+    "main.77fd2a32.js.map": "/static/js/main.77fd2a32.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd564c54.css",
+    "static/js/main.77fd2a32.js"
+  ]
+}
