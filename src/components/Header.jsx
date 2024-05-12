@@ -45,9 +45,9 @@ export default function Header() {
           <Link to="/FavPage">
             <FaHeart className="icon" />
           </Link>
-          <a href="/login">
+          <Link to={"/login"}>
             <FaUser className="icon" />
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
