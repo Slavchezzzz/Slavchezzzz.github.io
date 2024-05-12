@@ -1,6 +1,7 @@
 import "../styles/HeaderPhoto.css";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function HeaderPhoto() {
   return (
@@ -9,7 +10,7 @@ export default function HeaderPhoto() {
         <div className="header-main-text">
           <h1>Graffs Shop</h1>
           <h3>Начни рисовать вместе с нами прямо сейчас!</h3>
-          <a href="/test">Каталог</a>
+          <Link to={"/test"}>Каталог</Link>
           <div className="header-main-icon">
             <FaTelegram className="icon-dop" />
             <FaInstagramSquare className="icon-dop" />
