@@ -22,14 +22,18 @@ export default function Header() {
 
   return (
     <header>
-      <nav class="navbar">
-        <FiMenu id="bur" className="burger-menu" onClick={cliclOpen} />
+      <nav className="navbar">
+        <FiMenu
+          id="bur"
+          className="js-burger-open burger-menu"
+          onClick={cliclOpen}
+        />
         <Link to={"/"}>
           <img src="./logo.png"></img>
         </Link>
         <div className="header-info">
           <SideBar
-            className={cartOpen ? "active" : ""}
+            className={"js-burger" + (cartOpen ? " active" : "")}
             onClickClose={clickClose}
           />
         </div>
@@ -53,7 +57,7 @@ export default function Header() {
 function SideBar({ className, onClickClose }) {
   return (
     <ul class={"menu-links" + (className ? " " + className : "")}>
-      <FiX className="header-fix" onClick={onClickClose} />
+      <FiX className="header-fix js-burger-close" onClick={onClickClose} />
       <li>
         <a href="/test">Граффити</a>
       </li>

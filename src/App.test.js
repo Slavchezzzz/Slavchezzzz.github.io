@@ -1,22 +1,33 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import Header from "../src/components/Header";
-import { shallow } from "enzyme";
-import "./setupTests";
+import React from "react";
+import { render, fireEvent, screen } from "@testing-library/react";
+import Header from "./components/Header";
 
-describe("Header component", () => {
-  it("opens and closes SideBar correctly", () => {
-    const wrapper = shallow(<Header />);
-    const sideBar = wrapper.find("SideBar");
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { CartContextProvider } from "./components/data/CartContext";
+test("проверка открытия модального окна при нажатии на бургер-меню", () => {
+  // Рендерим компонент Header
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Header />,
+    },
+  ]);
 
-    // Проверяем, что изначально боковая панель не активна
-    expect(sideBar.prop("className")).toBe("");
+  const { container } = render(
+    <CartContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </CartContextProvider>
+  );
 
-    // Симулируем клик на бургер-меню
-    wrapper.find("#bur").simulate("click");
-    expect(sideBar.prop("className")).toBe("active");
+  const burgerMenu = container.querySelector(".js-burger");
+  const burgerMenuClose = container.querySelector(".js-burger-close");
+  const burgerMenuOpen = container.querySelector(".js-burger-open");
 
-    // Симулируем клик на крестик
-    sideBar.prop("onClickClose")();
-    expect(sideBar.prop("className")).toBe("");
-  });
+  expect(burgerMenu).not.toHaveClass("active");
+
+  fireEvent.click(burgerMenuOpen);
+  expect(burgerMenu).toHaveClass("active");
+
+  fireEvent.click(burgerMenuClose);
+  expect(burgerMenu).not.toHaveClass("active");
 });
