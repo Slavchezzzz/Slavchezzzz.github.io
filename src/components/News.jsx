@@ -33,10 +33,10 @@ export default function News() {
         <div className="small-news">
           <div className="article-wrap-small">
             <div className="article-avatar">
-              <img src="../slide/slide6.jpg" alt="" />
+              <img src="../slide/slide10.jpg" alt="" />
             </div>
             <div className="article_text">
-              <h2>Аэрозольная краска TITANS</h2>
+              <h2>Дарим маркеры!</h2>
               <a href="">Подробнее...</a>
             </div>
           </div>
