@@ -43,7 +43,7 @@ export function Card({ emplayss }) {
       <div className="card-description">
         <span>Аэразольная краска{emplayss.name} </span>
         <span>{emplayss.ml} мл</span>
-        <h2>{emplayss.price}$</h2>
+        <h2>{emplayss.price}₽</h2>
       </div>
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>

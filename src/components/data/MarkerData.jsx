@@ -2,7 +2,7 @@ export const MarkerData = [
   {
     id: "1",
     name: "Molotow Blackliner Brush",
-    price: 2,
+    price: 200,
     mm: "2",
     color: "Черный",
     img: "./Markers/photo1.png",
@@ -10,7 +10,7 @@ export const MarkerData = [
   {
     id: "2",
     name: "Montana BOLD",
-    price: 7,
+    price: 700,
     mm: "10",
     color: "Черный",
     img: "./Markers/photo2.jpg",
@@ -18,7 +18,7 @@ export const MarkerData = [
   {
     id: "3",
     name: "Molotow Liquid Chrome",
-    price: 8,
+    price: 800,
     mm: "4",
     color: "Черный",
     img: "./Markers/photo3.png",
@@ -26,7 +26,7 @@ export const MarkerData = [
   {
     id: "4",
     name: "Molotow Liquid Chrome",
-    price: 6,
+    price: 600,
     mm: "2",
     color: "Черный",
     img: "./Markers/photo4.png",
@@ -34,7 +34,7 @@ export const MarkerData = [
   {
     id: "5",
     name: "HandMixed Slim Egg Shell",
-    price: 9,
+    price: 900,
     mm: "10",
     color: "Черный",
     img: "./Markers/photo5.jpg",
@@ -43,7 +43,7 @@ export const MarkerData = [
     id: "6",
     tag: "Новинка",
     name: "HandMixed Subway",
-    price: 2,
+    price: 200,
     mm: "2",
     color: "Черный",
     img: "./Markers/photo6.jpg",
@@ -52,7 +52,7 @@ export const MarkerData = [
     id: "7",
     tag: "Новинка",
     name: "Molotow Dripstick Permanent Paint",
-    price: 6,
+    price: 600,
     mm: "10",
     color: "Черный",
     img: "./Markers/photo7.png",
@@ -60,7 +60,7 @@ export const MarkerData = [
   {
     id: "8",
     name: "Маркер акриловый Molotow One4all",
-    price: 2,
+    price: 200,
     mm: "2",
     color: "Черный",
     img: "./Markers/photo8.png",

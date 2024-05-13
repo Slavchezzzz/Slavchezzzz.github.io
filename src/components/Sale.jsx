@@ -59,14 +59,14 @@ export function Card({ SaleData }) {
         <span>{SaleData.name} </span>
         <span>{SaleData.ml} мл</span>
         <div className="old">
-          <h3>{SaleData.old_price}$</h3>
+          <h3>{SaleData.old_price}₽</h3>
         </div>
         <div className="new">
-          <h2>{SaleData.price}$</h2>
+          <h2>{SaleData.price}₽</h2>
         </div>
       </div>
       <div className="Card-pos">
-        <Link to={"/product"}>Подробнее</Link>s
+        <Link to={"/product"}>Подробнее</Link>
         <FaShoppingCart className={bucket} onClick={handleClick} />
         <FaHeart className={heart} onClick={heartClick} />
       </div>

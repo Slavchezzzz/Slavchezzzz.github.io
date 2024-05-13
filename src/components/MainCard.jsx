@@ -57,7 +57,7 @@ export function Card({ MainDataCard }) {
       <div className="card-description">
         <span>{MainDataCard.name} </span>
         <span>{MainDataCard.ml} мл</span>
-        <h2>{MainDataCard.price}$</h2>
+        <h2>{MainDataCard.price}₽</h2>
       </div>
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>

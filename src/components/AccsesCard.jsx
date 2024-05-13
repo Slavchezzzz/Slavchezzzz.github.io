@@ -55,7 +55,7 @@ export function Card({ accessoriesData }) {
       <img src={accessoriesData.img} width={200}></img>
       <div className="card-description">
         <span>{accessoriesData.name} </span>
-        <h2>{accessoriesData.price}$</h2>
+        <h2>{accessoriesData.price}₽</h2>
       </div>
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>
