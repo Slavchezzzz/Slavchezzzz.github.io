@@ -64,7 +64,7 @@ export default function ProductPage() {
             <div>
               <h1>Аэрозольная краска Titans 400 мл</h1>
               <div className="product-price">
-                <span>4$</span>
+                <span>400₽</span>
               </div>
             </div>
             <div className="product-button">

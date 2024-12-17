@@ -43,7 +43,7 @@ export function Card({ dataCard }) {
       <div className="card-description">
         <span>Аэразольная краска{dataCard.name} </span>
         <span>{dataCard.ml} мл</span>
-        <h2>{dataCard.price}$</h2>
+        <h2>{dataCard.price}₽</h2>
       </div>
       <div className="Card-pos">
         <Link to={"/product"}>Подробнее</Link>

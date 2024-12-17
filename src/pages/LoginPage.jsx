@@ -73,7 +73,7 @@ function RegisterPage({ onLoginClick }) {
     <div className="main-container">
       <div className="main-reg">
         <div className="container-reg">
-          <span className="title">Registration</span>
+          <span className="title">Регистрация</span>
           <div className="input-faild">
             <input type="text" className="name-log" placeholder="Name"></input>
             <FaUser className="input-icon"></FaUser>
@@ -126,17 +126,17 @@ function RegisterPage({ onLoginClick }) {
           <div className="checkbox-text">
             <div className="checkbox-content">
               <input type="checkbox" className="checkbox-input"></input>
-              <span className="checkbox-span">Remember me</span>
+              <span className="checkbox-span">Запомнить меня</span>
             </div>
           </div>
           <div className="log-button">
             <Link to={"/"}>
-              <input type="button" value="Login Now" required />
+              <input type="button" value="Создать" required />
             </Link>
           </div>
           <div className="login-signup">
             <span>Уже есть аккаунт?</span>
-            <button onClick={onLoginClick}>Login now</button>
+            <button onClick={onLoginClick}>Войти</button>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@ function Login({ onRegisterClick }) {
     <div className="main-container">
       <div className="main-log">
         <div className="container-reg">
-          <span className="title">Login</span>
+          <span className="title">Войти</span>
           <div className="input-faild">
             <input
               type="text"
@@ -232,7 +232,7 @@ function Login({ onRegisterClick }) {
           <div className="checkbox-text">
             <div className="checkbox-content">
               <input type="checkbox" className="checkbox-input"></input>
-              <span className="checkbox-span">Remember me</span>
+              <span className="checkbox-span">Запомнить меня</span>
             </div>
             <a href="#" class="text">
               Forgot password?
@@ -240,12 +240,12 @@ function Login({ onRegisterClick }) {
           </div>
           <div className="log-button">
             <Link to={"/"}>
-              <input type="button" value="Login Now" required />
+              <input type="button" value="Войти" required />
             </Link>
           </div>
           <div className="login-signup">
             <span>Нету аккаунта?</span>
-            <button onClick={onRegisterClick}>Sign now</button>
+            <button onClick={onRegisterClick}>Регистрация</button>
           </div>
         </div>
       </div>

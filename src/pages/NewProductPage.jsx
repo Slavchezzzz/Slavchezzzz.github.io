@@ -4,7 +4,7 @@ import NewProduct from "../components/NewProduct";
 
 export default function NewProductPage() {
   return (
-    <div>
+    <div className="layout">
       <Header />
       <div className="path-cont">
         <a href="/" className="path-des">

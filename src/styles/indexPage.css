@@ -13,6 +13,7 @@
 .layout {
   display: flex;
   flex-direction: column;
+  /* behavior: smooth; */
 }
 
 .Page {
