@@ -62,7 +62,7 @@ export default function Bucket() {
                 </div>
                 <div className="card-bucket-des">
                   <h2>{cart[key].name}</h2>
-                  <p>{cart[key].price}$</p>
+                  <p>{cart[key].price}₽</p>
                   <button onClick={() => handleRemoveItem(cart[key].id)}>
                     Удалить
                   </button>
