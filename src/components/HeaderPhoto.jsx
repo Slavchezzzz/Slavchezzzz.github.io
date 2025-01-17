@@ -11,10 +11,10 @@ export default function HeaderPhoto() {
           <h1>Graffs Shop</h1>
           <h3>Начни рисовать вместе с нами прямо сейчас!</h3>
           <Link to={"/test"}>Каталог</Link>
-          <div className="header-main-icon">
+          {/* <div className="header-main-icon">
             <FaTelegram className="icon-dop" />
             <FaInstagramSquare className="icon-dop" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

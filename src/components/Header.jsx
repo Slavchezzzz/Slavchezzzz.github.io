@@ -41,7 +41,7 @@ export default function Header() {
           <Link to="/bucket">
             <FaShoppingCart className="icon" />
           </Link>
-          <p>{Object.keys(cart).length}</p>
+          <p className="bucket-info-len">{Object.keys(cart).length}</p>
           <Link to="/FavPage">
             <FaHeart className="icon" />
           </Link>
