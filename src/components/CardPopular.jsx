@@ -1,14 +1,12 @@
 import "../styles/Card.css";
 import { dataCard } from "./data/dataCardPopular";
 import { Link } from "react-router-dom";
-
 import { useContext } from "react";
 import { CartContext } from "./data/CartContext.js";
 import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
-import { emplayss } from "./data/data.jsx";
 
-export default function CardMin() {
+export default function CardPopular() {
   return (
     <div className="Card-info">
       <div className="card-menu">
@@ -24,12 +22,12 @@ export function Card({ dataCard }) {
   const { cart, setCart } = useContext(CartContext);
 
   let bucket = "bucket-icon";
-  if (cart[dataCard.id] != undefined) {
+  if (cart[dataCard.id] !== undefined) {
     bucket += " active";
   }
 
   function handleClick() {
-    if (cart[dataCard.id] != undefined) {
+    if (cart[dataCard.id] !== undefined) {
       delete cart[dataCard.id];
     } else {
       cart[dataCard.id] = dataCard;

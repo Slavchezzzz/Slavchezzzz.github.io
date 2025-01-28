@@ -9,7 +9,7 @@ export default function HeaderPhoto() {
       <div className="header-main">
         <div className="header-main-text">
           <h1>Graffs Shop</h1>
-          <h3>Начни рисовать вместе с нами прямо сейчас!</h3>
+          <h3>Твори без ограничений – оживи мир цветом!</h3>
           <Link to={"/test"}>Каталог</Link>
           {/* <div className="header-main-icon">
             <FaTelegram className="icon-dop" />

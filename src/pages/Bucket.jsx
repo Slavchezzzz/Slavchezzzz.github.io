@@ -3,18 +3,10 @@ import Footer from "../components/Footer.jsx";
 import { useContext } from "react";
 import { CartContext } from "../components/data/CartContext.js";
 import "../styles/Bucket.css";
+import { Link } from "react-router-dom";
 
 export default function Bucket() {
   const { cart, setCart } = useContext(CartContext);
-
-  // Функция выводит на экран информацию об успешном оформлении заказа
-  function alr() {
-    if (totalPrice > 500) {
-      alert("Ваш заказ оформлен! На сумму: " + totalPrice + "₽");
-    } else {
-      alert("Минимальная сумма заказа 500 рублей!");
-    }
-  }
 
   // Функция удаляет товар из корзины
   function handleRemoveItem(itemId) {
@@ -68,7 +60,11 @@ export default function Bucket() {
                 <p>Количсетво товара в корзине: {Object.keys(cart).length}</p>
                 <p>Скидка: {salePrice}₽</p>
                 <p>Итого: {totalPrice}₽</p>
-                <button onClick={alr}>Оформить заказ</button>
+                {totalPrice >= 500 ? (
+                  <Link to={"/Order"}> Оформить заказ</Link>
+                ) : (
+                  <p>Цена меньше 500</p>
+                )}
               </div>
             </div>
             <div className="bucket-cart-tabl">

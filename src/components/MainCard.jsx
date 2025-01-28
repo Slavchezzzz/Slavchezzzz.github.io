@@ -53,7 +53,7 @@ export function Card({ MainDataCard }) {
 
   return (
     <div className="card-item-main">
-      <img src={MainDataCard.img} width={200}></img>
+      <img className="card-img-" src={MainDataCard.img} width={200}></img>
       <div className="card-description">
         <span>{MainDataCard.name} </span>
         <span>{MainDataCard.ml} мл</span>

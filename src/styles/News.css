@@ -5,27 +5,29 @@
 }
 
 .News {
+  border-top: 1px solid grey;
   width: 100%;
 }
 
-.main-news {
+.page-card-news {
   margin-top: 25px;
-  padding-bottom: 10px;
-  /* width: 100%; */
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(178, 98, 230, 1) 100%
-  ); */
+  background-image: url("/build/static/media/spray3.png");
+  background-repeat: no-repeat;
+  background-size: 340px;
+  background-position: top;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 35px;
+}
+
+.main-news {
+  margin-top: 35px;
+  /* padding-bottom: 10px; */
 }
 
 /* Большой блок */
-
-.main-news h1 {
-  margin-bottom: 25px;
-}
-
 .big-news {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,6 +116,7 @@
   object-fit: cover;
   transition: 5s;
   display: block;
+  /* filter: brightness(40%); */
 }
 
 .article-wrap-small img:hover {

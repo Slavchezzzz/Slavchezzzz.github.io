@@ -42,7 +42,10 @@ h1 {
   font-family: "Roboto";
 }
 
-.cart-itog button {
+.cart-itog a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   width: 100%;
   padding: 10px 50px 10px;
@@ -53,9 +56,10 @@ h1 {
   background-color: #a800e5;
   border: 1px solid #a800e5;
   transition: 500ms ease;
+  text-decoration: none;
 }
 
-.cart-itog button:hover {
+.cart-itog a:hover {
   background-color: #7502ab;
   border: 1px solid #7502ab;
 }

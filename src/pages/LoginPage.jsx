@@ -235,7 +235,7 @@ function Login({ onRegisterClick }) {
               <span className="checkbox-span">Запомнить меня</span>
             </div>
             <a href="#" class="text">
-              Forgot password?
+              Забыли пароль?
             </a>
           </div>
           <div className="log-button">

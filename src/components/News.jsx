@@ -3,8 +3,10 @@ import "../styles/News.css";
 export default function News() {
   return (
     <div className="News">
-      <div className="main-news">
+      <div className="page-card-news">
         <h1>Новости</h1>
+      </div>
+      <div className="main-news">
         {/* Большой блок */}
         <div className="big-news">
           <div className="article-wrap">

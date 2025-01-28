@@ -16,8 +16,6 @@ body {
 }
 
 nav.navbar {
-  /* position: fixed; */
-  /* z-index: 1000; */
   width: 100%;
   background-color: white;
   padding: 5px;
@@ -81,6 +79,19 @@ header .navbar {
   justify-content: center;
   gap: 40px;
   margin: 0;
+}
+
+.navbar .link-to-login {
+  background-color: #a800e5;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 13px;
+  font-size: medium;
+  font-family: 700px;
+}
+.navbar .link-to-login:hover {
+  color: white;
+  background-color: #7502ab;
 }
 
 .navbar a {

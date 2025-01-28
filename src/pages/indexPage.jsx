@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import "../styles/indexPage.css";
 import Footer from "../components/Footer.jsx";
@@ -15,13 +14,21 @@ export default function IndexPage() {
       <HeaderPhoto />
       <div className="Page">
         <div className="page-card">
-          <h1>Новое поступление</h1>
+          <div className="page-card-info-product">
+            <h1>Новые поступления</h1>
+          </div>
           <CardMin />
         </div>
-        <Infinity />
         <div className="page-card">
-          <h1>Популярный товар</h1>
+          <Infinity />
+        </div>
+        <div className="page-card">
+          <div className="page-card-info-product">
+            <h1>Популярный товар</h1>
+          </div>
           <CardPopular />
+        </div>
+        <div className="page-card">
           <News />
         </div>
       </div>
