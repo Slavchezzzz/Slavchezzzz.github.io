@@ -1,4 +1,5 @@
 import "../styles/News.css";
+import ControlledCarousel from "./SliderBoot";
 
 export default function News() {
   return (
@@ -6,30 +7,10 @@ export default function News() {
       <div className="page-card-news">
         <h1>Новости</h1>
       </div>
-      <div className="main-news">
+      <div className="container">
         {/* Большой блок */}
         <div className="big-news">
-          <div className="article-wrap">
-            <div className="article-avatar">
-              <img src="../slide/slide1-1.jpg" alt="" />
-            </div>
-            <div className="article_text">
-              <h2>
-                Работа интернет-магазина на <br />
-                майские праздники
-              </h2>
-              <a href="">Подробнее...</a>
-            </div>
-          </div>
-          <div className="article-wrap">
-            <div className="article-avatar">
-              <img src="../slide/slide7.jpg" alt="#" />
-            </div>
-            <div className="article_text">
-              <h2>Новинки месяца</h2>
-              <a href="">Подробнее...</a>
-            </div>
-          </div>
+          <ControlledCarousel />
         </div>
         {/* Маленький блок */}
         <div className="small-news">

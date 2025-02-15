@@ -6,6 +6,7 @@ import Infinity from "../components/InfinitySlider.jsx";
 import CardPopular from "../components/CardPopular.jsx";
 import HeaderPhoto from "../components/HeaderPhoto.jsx";
 import News from "../components/News.jsx";
+import ControlledCarousel from "../components/SliderBoot.jsx";
 
 export default function IndexPage() {
   return (

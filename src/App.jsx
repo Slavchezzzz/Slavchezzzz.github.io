@@ -11,7 +11,6 @@ import { CartContextProvider } from "./components/data/CartContext";
 import Bucket from "./pages/Bucket";
 import NewProductPage from "./pages/NewProductPage";
 import SalePage from "./pages/SalePage";
-import FavPage from "./pages/FavPage";
 import Order from "./pages/Order";
 // import Bucket from "./pages/Bucket";
 const router = createBrowserRouter([
@@ -54,10 +53,6 @@ const router = createBrowserRouter([
   {
     path: "/SalePage",
     element: <SalePage />,
-  },
-  {
-    path: "/FavPage",
-    element: <FavPage />,
   },
   {
     path: "/Order",

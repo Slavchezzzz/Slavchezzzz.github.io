@@ -56,7 +56,7 @@ export default function ProductPage() {
         </div>
         {/* Основной блок */}
         <div className="product-main">
-          <div className="product-img">
+          <div className="image-container">
             <img src="./cardNew/card1.png"></img>
           </div>
           {/* Описание продукта */}

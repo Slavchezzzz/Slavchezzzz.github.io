@@ -1,6 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.LogPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .main-container {
@@ -8,9 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/graffiti.jpg");
+  background-image: url("/public/spray/spray4\ .png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 650px;
 }
 
 .main-reg {
@@ -31,7 +40,6 @@
   padding: 30px;
   max-width: 430px;
   width: 400px;
-  /* height: 420px; */
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
@@ -98,7 +106,6 @@
 }
 
 .log-button {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   margin-top: 20px;
@@ -124,7 +131,6 @@
 
 .login-signup {
   text-align: center;
-  /* margin-top: 30px; */
 }
 
 .login-signup button {

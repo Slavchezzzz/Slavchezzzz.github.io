@@ -4,6 +4,8 @@ import { FaUser } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -17,13 +19,17 @@ export default function LoginPage() {
   }
 
   return (
-    <>
+    <div className="LogPage">
+      <Header />
+
       {isLogin ? (
         <Login onRegisterClick={clickRegister} />
       ) : (
         <RegisterPage onLoginClick={clickLogin} />
       )}
-    </>
+
+      <Footer />
+    </div>
   );
 }
 

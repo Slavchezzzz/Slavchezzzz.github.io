@@ -22,6 +22,8 @@ h1 {
   align-items: center;
 }
 
+/* Блок информации о товарах в корзине  */
+
 .itog {
   display: flex;
   justify-content: center;
@@ -64,33 +66,13 @@ h1 {
   border: 1px solid #7502ab;
 }
 
-/*  */
-
-.bucket-cart-tabl {
-  width: 78%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* justify-content: space-between; */
-  justify-content: space-around;
-  padding: 20px 20px 16px;
-}
-
-.bucket-cart-tabl p {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0;
-}
+/* Таблица товаров в корзине */
 
 .card-bucket {
   width: 100%;
   display: flex;
   background-color: white;
   padding: 20px 20px 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   border-top: 1px solid black;
   border-radius: 0;
 }
@@ -98,9 +80,8 @@ h1 {
 .card-bucket-des {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  /* gap: 50px; */
 }
 
 .card-bucket-des h2 {
@@ -112,13 +93,13 @@ h1 {
   margin: 0;
   width: 25%;
   justify-content: center;
-  justify-content: flex-start;
 }
 
 .bucket-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 150px;
 }
 
 .card-bucket-des p {
@@ -142,27 +123,30 @@ h1 {
   background-color: #7502ab;
   border: 1px solid #7502ab;
 }
+
+.clicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clicker button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: 500ms ease;
+}
+
 /* Адаптация страницы */
-@media screen and (max-width: 1150px) {
+
+@media screen and (max-width: 850px) {
   .card-bucket {
-    width: 100%;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 770px) {
-  .card-bucket {
-    display: flex;
-    flex-direction: column;
-    /* width: 500px; */
-  }
-}
-@media screen and (max-width: 525px) {
-  .card-bucket {
-    /* width: 300px; */
     width: 100%;
     display: flex;
   }
-  .bucket-img img {
+  .bucket-img {
     width: 150px;
   }
   .card-bucket-des {

@@ -23,14 +23,18 @@ export default function Header() {
   return (
     <header>
       <nav className="navbar">
-        <FiMenu
-          id="bur"
-          className="js-burger-open burger-menu"
-          onClick={cliclOpen}
-        />
-        <Link to={"/"}>
-          <img src="./logo.png"></img>
-        </Link>
+        <div className="hed">
+          <FiMenu
+            id="bur"
+            className="js-burger-open burger-menu"
+            onClick={cliclOpen}
+          />
+          <div className="header-logo">
+            <Link to={"/"}>
+              <img src="./logo.png"></img>
+            </Link>
+          </div>
+        </div>
         <div className="header-info">
           <SideBar
             className={"js-burger" + (cartOpen ? " active" : "")}
@@ -38,11 +42,11 @@ export default function Header() {
           />
         </div>
         <div className="header-icon">
-          <Link to="/bucket">
+          <Link to="/Order">
             <FaShoppingCart className="icon" />
           </Link>
           <p className="bucket-info-len">{Object.keys(cart).length}</p>
-          <Link to="/FavPage">
+          <Link to="/bucket">
             <FaHeart className="icon" />
           </Link>
           <Link className="link-to-login" to={"/login"}>
@@ -56,7 +60,7 @@ export default function Header() {
 
 function SideBar({ className, onClickClose }) {
   return (
-    <ul class={"menu-links" + (className ? " " + className : "")}>
+    <ul id="open" className={"menu-links" + (className ? " " + className : "")}>
       <FiX className="header-fix js-burger-close" onClick={onClickClose} />
       <Link to={"/test"}>Граффити</Link>
 

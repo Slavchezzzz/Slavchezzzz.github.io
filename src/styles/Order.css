@@ -13,19 +13,31 @@
 
 .main-order {
   flex-grow: 1;
+  padding: 15px;
 }
 
 .back-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e1ebee;
+  border-radius: 15px;
+}
+
+/* стили для информации о заказе */
+
+.order-info {
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
   justify-content: center;
   gap: 15px;
   background-color: #e1ebee;
-  display: flex;
-  margin: 50px;
   border-radius: 15px;
+  /* padding: 15px; */
 }
+
+/* стили для способа доставки */
 
 .delivery {
   background-color: white;
@@ -38,6 +50,36 @@
   align-items: center;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+}
+
+.input-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 5px;
+}
+
+.input-delivery input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.input-delivery input:focus {
+  border-bottom-color: #aa00e8;
+}
+
+/* стили для способа оплаты */
+
 .payment {
   background-color: white;
   width: 48%;
@@ -49,3 +91,95 @@
   justify-content: center;
   align-items: center;
 }
+
+.payment p {
+  font-size: large;
+  font-weight: 700;
+}
+
+.payment-info button {
+  height: 44px;
+  padding: 10px 50px 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #a800e5;
+  border: 1px solid #a800e5;
+  transition: 500ms ease;
+}
+
+.payment-info button:hover {
+  background-color: #7502ab;
+  border: 1px solid #7502ab;
+}
+
+/* стили для товаров  */
+.cart-main {
+  padding: 20px;
+}
+
+.card-order {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.card-order h2 {
+  margin: 0;
+}
+
+.card-order p {
+  display: flex;
+  margin: 0;
+  width: 25%;
+  justify-content: center;
+}
+
+.card-order p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-order button {
+  height: 44px;
+  padding: 10px 50px 10px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #a800e5;
+  border: 1px solid #a800e5;
+  transition: 500ms ease;
+}
+
+.card-order button:hover {
+  background-color: #7502ab;
+  border: 1px solid #7502ab;
+}
+
+.card-order img {
+  width: 150px;
+}
+
+.clicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clicker button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: 500ms ease;
+}
+
+/* Адаптация страницы */
