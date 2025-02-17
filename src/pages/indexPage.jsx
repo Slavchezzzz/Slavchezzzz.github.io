@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import "../styles/indexPage.css";
 import Footer from "../components/Footer.jsx";
@@ -7,6 +6,7 @@ import Infinity from "../components/InfinitySlider.jsx";
 import CardPopular from "../components/CardPopular.jsx";
 import HeaderPhoto from "../components/HeaderPhoto.jsx";
 import News from "../components/News.jsx";
+import ControlledCarousel from "../components/SliderBoot.jsx";
 
 export default function IndexPage() {
   return (
@@ -15,13 +15,21 @@ export default function IndexPage() {
       <HeaderPhoto />
       <div className="Page">
         <div className="page-card">
-          <h1>Новое поступление</h1>
+          <div className="page-card-info-product">
+            <h1>Новые поступления</h1>
+          </div>
           <CardMin />
         </div>
-        <Infinity />
         <div className="page-card">
-          <h1>Популярный товар</h1>
+          <Infinity />
+        </div>
+        <div className="page-card">
+          <div className="page-card-info-product">
+            <h1>Популярный товар</h1>
+          </div>
           <CardPopular />
+        </div>
+        <div className="page-card">
           <News />
         </div>
       </div>

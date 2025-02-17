@@ -12,7 +12,6 @@
 }
 
 .bucket-main {
-  /* background-color: #f5f5f5; */
   flex-grow: 1;
 }
 
@@ -22,6 +21,8 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* Блок информации о товарах в корзине  */
 
 .itog {
   display: flex;
@@ -43,7 +44,10 @@ h1 {
   font-family: "Roboto";
 }
 
-.cart-itog button {
+.cart-itog a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 44px;
   width: 100%;
   padding: 10px 50px 10px;
@@ -54,35 +58,30 @@ h1 {
   background-color: #a800e5;
   border: 1px solid #a800e5;
   transition: 500ms ease;
+  text-decoration: none;
 }
 
-.cart-itog button:hover {
+.cart-itog a:hover {
   background-color: #7502ab;
   border: 1px solid #7502ab;
 }
 
-/*  */
+/* Таблица товаров в корзине */
 
 .card-bucket {
-  /* width: 1098px; */
   width: 100%;
   display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
   background-color: white;
   padding: 20px 20px 16px;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* margin-left: 15px; */
+  border-top: 1px solid black;
+  border-radius: 0;
 }
 
 .card-bucket-des {
-  /* background-color: white; */
+  width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 50px;
 }
 
 .card-bucket-des h2 {
@@ -92,13 +91,15 @@ h1 {
 .card-bucket-des p {
   display: flex;
   margin: 0;
-  /* flex-direction: column; */
+  width: 25%;
+  justify-content: center;
 }
 
 .bucket-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 150px;
 }
 
 .card-bucket-des p {
@@ -123,25 +124,29 @@ h1 {
   border: 1px solid #7502ab;
 }
 
-@media screen and (max-width: 1150px) {
-  .card-bucket {
-    width: 770px;
-    justify-content: center;
-  }
+.clicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-@media screen and (max-width: 770px) {
-  .card-bucket {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-  }
+
+.clicker button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: 500ms ease;
 }
-@media screen and (max-width: 525px) {
+
+/* Адаптация страницы */
+
+@media screen and (max-width: 850px) {
   .card-bucket {
-    /* width: 300px; */
+    width: 100%;
     display: flex;
   }
-  .bucket-img img {
+  .bucket-img {
     width: 150px;
   }
   .card-bucket-des {
@@ -153,7 +158,6 @@ h1 {
 
 @media screen and (max-width: 510px) {
   .card-bucket {
-    width: 200px;
     display: flex;
     justify-content: center;
   }

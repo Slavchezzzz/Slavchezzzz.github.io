@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import IndexPage from "./pages/indexPage";
@@ -12,7 +11,7 @@ import { CartContextProvider } from "./components/data/CartContext";
 import Bucket from "./pages/Bucket";
 import NewProductPage from "./pages/NewProductPage";
 import SalePage from "./pages/SalePage";
-import FavPage from "./pages/FavPage";
+import Order from "./pages/Order";
 // import Bucket from "./pages/Bucket";
 const router = createBrowserRouter([
   {
@@ -56,8 +55,8 @@ const router = createBrowserRouter([
     element: <SalePage />,
   },
   {
-    path: "/FavPage",
-    element: <FavPage />,
+    path: "/Order",
+    element: <Order />,
   },
 ]);
 

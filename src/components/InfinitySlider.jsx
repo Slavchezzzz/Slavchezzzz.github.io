@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { BrandsData } from "../components/data/BrandsData.jsx";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,46 +14,39 @@ import { Pagination } from "swiper/modules";
 
 export default function InfinitySlider() {
   return (
-    <>
-      <div className="Brands-info">
+    <div className="slider">
+      <div className="page-card-info">
         <h1>Бренды</h1>
       </div>
-      <Swiper
-        slidesPerView={4}
-        centeredSlides={true}
-        spaceBetween={30}
-        grabCursor={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="./Brands/photo2.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo6.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo1.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo5.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo4.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo3.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo7.png"></img>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="./Brands/photo8.png"></img>
-        </SwiperSlide>
-      </Swiper>
-    </>
+      <div className="slider-all">
+        <Swiper
+          slidesPerView={4}
+          centeredSlides={true}
+          spaceBetween={30}
+          grabCursor={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {BrandsData.map((BrandsData, index) => {
+            return (
+              <SwiperSlide>
+                <div className="Brands-item" key={index}>
+                  <div className="Brand-image">
+                    <img src={BrandsData.img} />
+                  </div>
+                  <div className="Brand-discription">
+                    <h1>{BrandsData.name}</h1>
+                    <span>{BrandsData.discription}</span>
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+    </div>
   );
 }

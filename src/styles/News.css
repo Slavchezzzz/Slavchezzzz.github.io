@@ -5,36 +5,32 @@
 }
 
 .News {
+  border-top: 1px solid grey;
   width: 100%;
 }
 
-.main-news {
+.page-card-news {
   margin-top: 25px;
-  padding-bottom: 10px;
-  /* width: 100%; */
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(178, 98, 230, 1) 100%
-  ); */
+  background-image: url("/public/spray/spray3.png");
+  background-repeat: no-repeat;
+  background-size: 340px;
+  background-position: top;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 35px;
+}
+
+.container {
+  margin-top: 35px;
 }
 
 /* Большой блок */
-
-.main-news h1 {
-  margin-bottom: 25px;
-}
-
 .big-news {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  max-width: 1500px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 45px;
-  row-gap: 45px;
   margin: 0 auto;
   padding-top: 10px;
 }
@@ -47,7 +43,6 @@
 }
 
 .article-wrap img {
-  /* width: 800px; */
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -57,13 +52,13 @@
 
 .article-wrap img:hover {
   transform: scale(1.08);
-  /* filter: blur(2px); */
   filter: brightness(40%);
 }
 
 /* Текст */
 
 .article_text {
+  text-shadow: 1px 1px 2px black;
   z-index: 4;
   color: white;
   font-size: 1.3rem;
@@ -91,7 +86,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  max-width: 1500px;
+  max-width: 1300px;
   justify-content: center;
   align-items: center;
   column-gap: 45px;
@@ -108,8 +103,7 @@
 }
 
 .article-wrap-small img {
-  /* width: 523px; */
-  min-width: 100%;
+  width: 100%;
   height: 320px;
   object-fit: cover;
   transition: 5s;
@@ -118,13 +112,15 @@
 
 .article-wrap-small img:hover {
   transform: scale(1.08);
-  /* filter: blur(2px); */
+  filter: blur(2px);
   filter: brightness(40%);
 }
 
 @media screen and (max-width: 1200px) {
   .article-wrap-small img {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
+    /* height: 100%; */
   }
   .big-new img {
     width: 400px;

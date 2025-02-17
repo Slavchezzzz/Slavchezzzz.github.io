@@ -1,6 +1,6 @@
 export const SaleData = [
   {
-    id: "1",
+    id: "31",
     name: "Аэрозольная краска Molotow Premium Neon",
     ml: "400",
     old_price: 600,
@@ -8,7 +8,7 @@ export const SaleData = [
     img: "./cardPopular/card7.jpg",
   },
   {
-    id: "2",
+    id: "32",
     name: "Аэрозольная краска Flame Blue",
     ml: "400",
     old_price: 500,
@@ -16,7 +16,7 @@ export const SaleData = [
     img: "./cardPopular/card9.png",
   },
   {
-    id: "3",
+    id: "33",
     name: "Краска аэрозольная Molotow Burner Chrom",
     ml: "400",
     old_price: 700,
@@ -24,7 +24,7 @@ export const SaleData = [
     img: "./cardPopular/card10.png",
   },
   {
-    id: "4",
+    id: "34",
     name: "Аэрозольная краска MTN 94",
     ml: "400",
     old_price: 600,
@@ -32,7 +32,7 @@ export const SaleData = [
     img: "./cardPopular/card8.jpg",
   },
   {
-    id: "5",
+    id: "35",
     name: "Аэрозольная краска Easy",
     ml: "400",
     old_price: 700,
@@ -40,7 +40,7 @@ export const SaleData = [
     img: "./cardPopular/card11.png",
   },
   {
-    id: "6",
+    id: "36",
     name: "Аэрозольная краска Montana Black",
     ml: "400",
     old_price: 600,
@@ -48,7 +48,7 @@ export const SaleData = [
     img: "./cardNew/card3.png",
   },
   {
-    id: "7",
+    id: "37",
     name: "Аэрозольная краска Abro",
     ml: "400",
     old_price: 300,
@@ -56,7 +56,7 @@ export const SaleData = [
     img: "./cardPopular/card12.png",
   },
   {
-    id: "8",
+    id: "38",
     name: "Аэрозольная краска Molotow Urban Fine-Art",
     ml: "400",
     old_price: 500,
@@ -64,7 +64,7 @@ export const SaleData = [
     img: "./cardPopular/card13.png",
   },
   {
-    id: "9",
+    id: "39",
     name: "Маркер Krink K-42",
     old_price: 300,
     price: 200,
@@ -73,7 +73,7 @@ export const SaleData = [
     img: "./Markers/photo9.jpg",
   },
   {
-    id: "10",
+    id: "310",
     name: "Маркер Uni Paint PX-30",
     old_price: 600,
     price: 400,
@@ -82,14 +82,14 @@ export const SaleData = [
     img: "./Markers/photo8.jpg",
   },
   {
-    id: "11",
+    id: "311",
     name: "Сумка Montana Can Bag",
     old_price: 800,
     price: 500,
     img: "./Accses/photo10.jpg",
   },
   {
-    id: "12",
+    id: "312",
     name: "Сумка для баллонов Molotow",
     old_price: 1500,
     price: 1000,

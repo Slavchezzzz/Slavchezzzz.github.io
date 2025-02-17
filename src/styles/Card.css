@@ -4,10 +4,15 @@
 }
 
 .Card-info {
-  padding: 20px;
+  padding: 45px;
   color: aliceblue;
   justify-content: center;
+<<<<<<< HEAD
   border-bottom: 1px solid black;
+=======
+  /* border-bottom: 1px solid black; */
+  /* padding-bottom: 50px; */
+>>>>>>> main
 }
 
 .Card-info h1 {
@@ -28,18 +33,14 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-  /* column-gap: 25px; */
   row-gap: 45px;
   margin: 0 auto;
-  /* padding: 50px 0 50px; */
 }
 
 .card-item {
   display: flex;
   flex-direction: column;
-  /* padding: 25px; */
   width: 200px;
-  /* height: 350px; */
   background-color: white;
   color: black;
   border-radius: 10px;

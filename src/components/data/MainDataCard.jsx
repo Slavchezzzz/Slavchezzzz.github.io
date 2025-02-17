@@ -4,6 +4,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска H7",
     ml: "400",
     price: 300,
+    old_price: 0,
     img: "./cardPopular/card4.jpg",
   },
   {
@@ -11,6 +12,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска LOOP",
     ml: "400",
     price: 400,
+    old_price: 0,
     img: "./cardPopular/card3.jpg",
   },
   {
@@ -18,6 +20,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска Montana Gold",
     ml: "400",
     price: 200,
+    old_price: 0,
     img: "./cardPopular/card2.jpeg",
   },
   {
@@ -25,6 +28,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска Titans",
     ml: "400",
     price: 300,
+    old_price: 0,
     img: "./cardNew/card1.png",
   },
   {
@@ -32,6 +36,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска Arton",
     ml: "400",
     price: 400,
+    old_price: 0,
     img: "./cardNew/card2.jpg",
   },
   {
@@ -39,6 +44,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска Montana Black",
     ml: "400",
     price: 200,
+    old_price: 0,
     img: "./cardNew/card3.png",
   },
   {
@@ -46,6 +52,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска One Take",
     ml: "400",
     price: 200,
+    old_price: 0,
     img: "./cardNew/card4.jpg",
   },
   {
@@ -53,6 +60,7 @@ export const MainDataCard = [
     name: "Аэрозольная краска One Take Limited Edition",
     ml: "400",
     price: 700,
+    old_price: 0,
     img: "./cardPopular/card1.jpg",
   },
 ];
