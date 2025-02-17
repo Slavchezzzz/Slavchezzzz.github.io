@@ -19,7 +19,7 @@ export default function News() {
               <img src="../slide/slide10.jpg" alt="" />
             </div>
             <div className="article_text">
-              <h2>Дарим маркеры!</h2>
+              <p>Дарим маркеры!</p>
               <a href="">Подробнее...</a>
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function News() {
               <img src="../slide/slide8.jpg" alt="" />
             </div>
             <div className="article_text">
-              <h2>SABOTAGE в GraffsShop</h2>
+              <p>SABOTAGE в GraffsShop</p>
               <a href="">Подробнее...</a>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function News() {
               <img src="../slide/slide9.jpg" alt="" />
             </div>
             <div className="article_text">
-              <h2>Molotow и Flame по новой цене!</h2>
+              <p>Molotow и Flame по новой цене!</p>
               <a href="">Подробнее...</a>
             </div>
           </div>

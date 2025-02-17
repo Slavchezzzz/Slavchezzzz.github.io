@@ -108,30 +108,36 @@ export default function Order() {
               <h2>Спопсоб оплаты</h2>
               <div className="description">
                 <div className="checkbox">
-                  <h5>Выберите способ оплаты</h5>
-                  <div className="checkbox-content">
-                    <input type="checkbox" className="checkbox-input"></input>
-                    <span className="checkbox-span">Оплата сразу</span>
+                  <div className="payment-section">
+                    <h5>Выберите способ оплаты</h5>
+                    <div className="checkbox-content">
+                      <input type="checkbox" className="checkbox-input"></input>
+                      <span className="checkbox-span">Оплата сразу</span>
+                    </div>
+                    <div className="checkbox-content">
+                      <input type="checkbox" className="checkbox-input"></input>
+                      <span className="checkbox-span">
+                        Оплата при получении
+                      </span>
+                    </div>
                   </div>
-                  <div className="checkbox-content">
-                    <input type="checkbox" className="checkbox-input"></input>
-                    <span className="checkbox-span">Оплата при получении</span>
-                  </div>
-                  <h5>Выберите тип оплаты</h5>
-                  <div className="checkbox-content">
-                    <input type="checkbox" className="checkbox-input"></input>
-                    <span className="checkbox-span">Оплата картой</span>
-                  </div>
-                  <div className="checkbox-content">
-                    <input type="checkbox" className="checkbox-input"></input>
-                    <span className="checkbox-span">Оплата наличными</span>
+                  <div className="payment-section">
+                    <h5>Выберите тип оплаты</h5>
+                    <div className="checkbox-content">
+                      <input type="checkbox" className="checkbox-input"></input>
+                      <span className="checkbox-span">Оплата картой</span>
+                    </div>
+                    <div className="checkbox-content">
+                      <input type="checkbox" className="checkbox-input"></input>
+                      <span className="checkbox-span">Оплата наличными</span>
+                    </div>
                   </div>
                 </div>
                 <div className="payment-info">
                   <p>Количсетво товара в корзине: {Object.keys(cart).length}</p>
                   <p>Скидка: {salePrice} ₽</p>
                   <p>Доставка:</p>
-                  <p>Итого: {totalPrice} ₽</p>
+                  <p id="itog">Итого: {totalPrice} ₽</p>
                   <button>Оформить</button>
                 </div>
               </div>

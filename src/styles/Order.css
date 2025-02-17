@@ -22,26 +22,24 @@
   justify-content: center;
   background-color: #e1ebee;
   border-radius: 15px;
+  width: 100%;
 }
 
 /* стили для информации о заказе */
 
 .order-info {
   display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px;
   justify-content: center;
-  gap: 15px;
-  background-color: #e1ebee;
+  width: 100%;
   border-radius: 15px;
-  /* padding: 15px; */
 }
 
 /* стили для способа доставки */
 
 .delivery {
   background-color: white;
-  width: 48%;
+  width: 100%;
   border-radius: 15px;
 }
 .delivery h2 {
@@ -51,6 +49,7 @@
 }
 
 .description {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -82,7 +81,7 @@
 
 .payment {
   background-color: white;
-  width: 48%;
+  width: 100%;
   border-radius: 15px;
 }
 
@@ -94,11 +93,15 @@
 
 .payment p {
   font-size: large;
+}
+
+.payment #itog {
+  font-size: large;
   font-weight: 700;
 }
 
 .payment-info button {
-  height: 44px;
+  width: 100%;
   padding: 10px 50px 10px;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -112,6 +115,11 @@
 .payment-info button:hover {
   background-color: #7502ab;
   border: 1px solid #7502ab;
+}
+
+.payment .checkbox {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* стили для товаров  */
@@ -183,3 +191,23 @@
 }
 
 /* Адаптация страницы */
+
+@media screen and (max-width: 800px) {
+  .card-order {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+  .card-order p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .payment-info button {
+    padding: 5px 25px 5px;
+  }
+  .payment .checkbox {
+    flex-direction: column;
+  }
+}
