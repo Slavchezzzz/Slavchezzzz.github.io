@@ -1,7 +1,6 @@
 import { CartContext } from "../components/data/CartContext.js";
 import { useContext } from "react";
 import React, { useEffect, useState } from "react";
-// import axios from "axios";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import "../styles/Order.css";
