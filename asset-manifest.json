@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9198c4e.css",
+    "main.js": "/static/js/main.fe2a2ad5.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/spray4 .png": "/static/media/spray4 .d3e3ab3430c1d561b0b1.png",
+    "static/media/jpg": "/static/media/74e384a467396025db6a06f333b3a9c2.8643cca783a29a362ba7.jpg",
+    "static/media/sprey.png": "/static/media/sprey.32979dc8febe82eb06d4.png",
+    "static/media/spray2.png": "/static/media/spray2.00e6a7d84778f8cf3836.png",
+    "static/media/spray3.png": "/static/media/spray3.2ca3d190e02f706f32f9.png",
+    "static/media/JollyLodger-Regular.ttf": "/static/media/JollyLodger-Regular.d9785c8c959eadc4b582.ttf",
+    "index.html": "/index.html",
+    "main.d9198c4e.css.map": "/static/css/main.d9198c4e.css.map",
+    "main.fe2a2ad5.js.map": "/static/js/main.fe2a2ad5.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9198c4e.css",
+    "static/js/main.fe2a2ad5.js"
+  ]
+}
