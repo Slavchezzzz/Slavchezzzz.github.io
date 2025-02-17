@@ -40,6 +40,7 @@ export default function Order() {
       return prevCounts;
     });
   };
+
   // Считаем общую сумму заказа
   const totalPrice = Object.keys(cart).reduce((total, key) => {
     const item = cart[key];
@@ -136,7 +137,7 @@ export default function Order() {
                 <div className="payment-info">
                   <p>Количсетво товара в корзине: {Object.keys(cart).length}</p>
                   <p>Скидка: {salePrice} ₽</p>
-                  <p>Доставка:</p>
+                  <p>Доставка: 0 ₽</p>
                   <p id="itog">Итого: {totalPrice} ₽</p>
                   <button>Оформить</button>
                 </div>
